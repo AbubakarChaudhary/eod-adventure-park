@@ -30,6 +30,7 @@ const CartDetailPage = () => {
       borderRadius: "5px",
       padding: "10px 20px",
       marginTop: "20px",
+      boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px",
     },
     redIcon: {
       color: "red",
@@ -81,7 +82,14 @@ const CartDetailPage = () => {
                           marginTop: "20px",
                         }}
                       >
-                        <button onClick={qtyDecrement}>-</button>
+                        <button
+                          onClick={qtyDecrement}
+                          style={{
+                            boxShadow: "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;",
+                          }}
+                        >
+                          -
+                        </button>
                         <p
                           style={{
                             width: "20px",
@@ -92,7 +100,14 @@ const CartDetailPage = () => {
                         >
                           {qty}
                         </p>
-                        <button onClick={qtyIncrement}>+</button>
+                        <button
+                          onClick={qtyIncrement}
+                          style={{
+                            boxShadow: "rgba(99, 99, 99, 0.2) 0px 3px 8px 0px;",
+                          }}
+                        >
+                          +
+                        </button>
                       </div>
                     </div>
 
