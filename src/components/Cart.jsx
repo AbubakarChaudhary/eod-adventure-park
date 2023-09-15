@@ -16,7 +16,9 @@ const Cart = () => {
         </div>
         <div className="cart-wrap">
           {products.map((item) => (
-            <SingleProduct item={item} key={item.id} />
+            <div style={{ padding: "10px" }}>
+              <SingleProduct item={item} key={item.id} />
+            </div>
           ))}
         </div>
       </div>

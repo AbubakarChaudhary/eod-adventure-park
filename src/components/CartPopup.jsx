@@ -33,6 +33,7 @@ const ShoppingCartDropdown = () => {
         outline: "none", // Remove focus effect
       },
       border: "none", // Remove border
+      padding: "0",
     },
     redIcon: {
       color: "red", // Change the color of the icon to red
@@ -70,18 +71,18 @@ const ShoppingCartDropdown = () => {
                   <div className="cart-item-content">
                     <h3>{item.name}</h3>
                     <p>{item.desc}</p>
+                    <IconButton
+                      style={styles.iconButton}
+                      onClick={() =>
+                        dispatch({
+                          type: "REMOVE_FROM_CART",
+                          payload: item,
+                        })
+                      }
+                    >
+                      <RemoveCircleOutlineIcon style={styles.redIcon} />
+                    </IconButton>
                   </div>
-                  <IconButton
-                    style={styles.iconButton}
-                    onClick={() =>
-                      dispatch({
-                        type: "REMOVE_FROM_CART",
-                        payload: item,
-                      })
-                    }
-                  >
-                    <RemoveCircleOutlineIcon style={styles.redIcon} />
-                  </IconButton>
                 </div>
               </>
             );

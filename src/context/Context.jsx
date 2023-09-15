@@ -17,6 +17,10 @@ const Context = ({ children }) => {
   const [state, dispatch] = useReducer(cartReducer, {
     products: products,
     cart: [],
+    notification: {
+      message: "",
+      isOpen: false,
+    },
   });
 
   return <Cart.Provider value={{ state, dispatch }}>{children}</Cart.Provider>;
@@ -25,4 +29,5 @@ const Context = ({ children }) => {
 export const CartState = () => {
   return useContext(Cart);
 };
+
 export default Context;
