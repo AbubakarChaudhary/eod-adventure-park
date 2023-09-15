@@ -47,7 +47,7 @@ function DrawerAppBar(props) {
       <Button variant="outlined" size="medium" sx={{ my: 1, mx: 1 }}>
         Buy Entery Tickets
       </Button>
-      <ShoppingCartDropdown sx={{ mx: 0 }} />
+
       {/*   <Button variant="contained" size="medium" sx={{ my: 1, mx: 1 }}>
         Log In
       </Button> */}
@@ -65,6 +65,7 @@ function DrawerAppBar(props) {
           <Link to="/">
             <img src={Logo} alt="logo" />
           </Link>
+          <ShoppingCartDropdown sx={{ mx: 0 }} />
           <IconButton
             color="inherit"
             aria-label="open drawer"
@@ -82,7 +83,6 @@ function DrawerAppBar(props) {
               </Button>
             ))}
 
-            <ShoppingCartDropdown sx={{ mx: 0 }} />
             {/*  <Button variant="contained" size="large">
               Log In
             </Button> */}
