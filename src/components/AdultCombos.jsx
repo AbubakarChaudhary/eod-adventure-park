@@ -2,7 +2,7 @@ const customArray = [
   {
     id: 1,
     name: "Killer Combo",
-    imageSrc: "./public/pic1.png",
+    imageSrc: "https://i.ibb.co/2PkcwBb/skip-frame.png",
     price: 19.99,
     time: "10:00 AM - 8:00 PM",
     desc: "*not valid on weekends and or gazetted holidays*",
@@ -10,7 +10,7 @@ const customArray = [
   {
     id: 2,
     name: "Supreme Combo",
-    imageSrc: "./public/pic2.png",
+    imageSrc: "https://i.ibb.co/Y32sh3d/skip-frame-1.png",
     price: 29.99,
     time: "10:00 AM - 8:00 PM",
     desc: "*not valid on weekends and or gazetted holidays*",
@@ -18,7 +18,7 @@ const customArray = [
   {
     id: 3,
     name: "Conqueror Combo",
-    imageSrc: "./public/pic3.png",
+    imageSrc: "https://i.ibb.co/19196dr/skip-frame-2.png",
     price: 9.99,
     time: "10:00 AM - 8:00 PM",
     desc: "*not valid on weekends and or gazetted holidays*",
@@ -26,7 +26,7 @@ const customArray = [
   {
     id: 4,
     name: "Ultimate Combo",
-    imageSrc: "./public/pic4.png",
+    imageSrc: "https://i.ibb.co/YDQbkqv/skip-frame-3.png",
     price: 9.99,
     time: "10:00 AM - 8:00 PM",
     desc: "*not valid on weekends and or gazetted holidays*",
