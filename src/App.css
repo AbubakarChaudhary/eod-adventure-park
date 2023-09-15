@@ -50,6 +50,7 @@ p {
 @media (max-width: 768px) {
   .Card {
     display: block;
+    width: 100%;
   }
   .Card img {
     width: 100% !important;
